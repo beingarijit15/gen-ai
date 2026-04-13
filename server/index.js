@@ -17,7 +17,7 @@ const port = process.env.PORT || 5000
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "https://gen-ai-lime-eight.vercel.app/",
+    origin: "https://gen-ai-lime-eight.vercel.app",
     credentials: true
 }))
 app.use("/api/auth", authRouter)
